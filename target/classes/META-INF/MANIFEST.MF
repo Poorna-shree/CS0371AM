@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Build-Jdk-Spec: 23
+Main-Class: CS0371A.CS0371A.App
+Created-By: Maven Integration for Eclipse
+key: value
+url: http://www.example.com
+
