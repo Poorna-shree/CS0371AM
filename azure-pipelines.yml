@@ -1,0 +1,19 @@
+# Azure DevOps Pipeline for a Java Maven Project
+
+trigger:
+- master
+
+pool:
+  name: Default
+
+steps:
+- script: echo "Hello"
+  displayName: 'Run an echo command'
+
+- script: mvn clean install
+  displayName: 'Build with Maven'
+  workingDirectory: $(Build.SourcesDirectory)
+
+- script: java -jar target/CS0371A-0.0.1-SNAPSHOT.jar
+  displayName: 'Run the built JAR file'
+  
