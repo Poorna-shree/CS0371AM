@@ -21,7 +21,7 @@ pipeline {
         }
         stage('Run Application') {
             steps {
-                bat 'java -jar target/CS0371AM-0.0.1-SNAPSHOT.jar'
+                bat 'java -jar target/CS0371A-0.0.1-SNAPSHOT.jar'
             }
         }
     }
